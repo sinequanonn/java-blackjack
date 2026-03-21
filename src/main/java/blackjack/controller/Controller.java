@@ -75,6 +75,7 @@ public class Controller {
         while (player.canReceive()) {
             HitCommand command = HitCommand.from(inputView.readReceiveCard(player));
             if (!command.isHit()) {
+                player.stand();
                 return;
             }
 
