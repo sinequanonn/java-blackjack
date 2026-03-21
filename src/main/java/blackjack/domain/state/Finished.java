@@ -23,6 +23,4 @@ public abstract class Finished extends Started {
     public boolean isFinished() {
         return true;
     }
-
-    protected abstract double earningRate();
 }

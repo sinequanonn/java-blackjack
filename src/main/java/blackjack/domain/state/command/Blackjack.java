@@ -17,9 +17,4 @@ public class Blackjack extends Finished {
     public boolean isBust() {
         return false;
     }
-
-    @Override
-    public double earningRate() {
-        return 1.5;
-    }
 }

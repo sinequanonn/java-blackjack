@@ -17,9 +17,4 @@ public class Stand extends Finished {
     public boolean isBust() {
         return false;
     }
-
-    @Override
-    public double earningRate() {
-        return 1.0;
-    }
 }

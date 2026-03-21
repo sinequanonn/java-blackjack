@@ -17,9 +17,4 @@ public class Bust extends Finished {
     public boolean isBust() {
         return true;
     }
-
-    @Override
-    public double earningRate() {
-        return 0;
-    }
 }
