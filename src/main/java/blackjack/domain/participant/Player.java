@@ -5,8 +5,6 @@ import blackjack.domain.betting.BettingAmount;
 import java.math.BigDecimal;
 
 public class Player extends Participant {
-    private static final int MAX_CARD_SUM = 21;
-
     private final Name name;
     private final BettingAmount bettingAmount;
 
@@ -25,6 +23,6 @@ public class Player extends Participant {
 
     @Override
     public boolean canReceive() {
-        return getScore().isLess(MAX_CARD_SUM);
+        return !isFinished();
     }
 }
