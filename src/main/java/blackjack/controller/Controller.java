@@ -80,11 +80,10 @@ public class Controller {
             }
 
             game.hitTo(player);
-            if (player.isBust()) {
-                outputView.printBust(player.getName());
-                return;
-            }
             outputView.printPlayerCardStatus(player, player.getCards());
+        }
+        if (player.isBust()) {
+            outputView.printBust(player.getName());
         }
     }
 }
